@@ -38,7 +38,12 @@ function addfield() {
 function addlist() {   
         var addDate = document.getElementById("datefield").value;
         var addDescriptionbox = document.getElementById("descriptionfield").value;
+        if(addDate==='' || addDescriptionbox===''){
+            alert("Please give the input");
+        }
+        else{
         createTable(addDate, addDescriptionbox);
+        }
 }
 
 // click on CANCEL button....
